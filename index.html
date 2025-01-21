@@ -27,7 +27,8 @@
             <h2>The Bluetooth Worm</h2>
             <time datetime="2025-01-20"></time>
             <article>
-   </h3>The Risk of Bluetooth enabled devices.</h3>
+            
+    <h3>The Risk of Bluetooth enabled devices.</h3>
     <p>An assortment of new devices are equipped with Bluetooth and more specifically Bluetooth low energy, a new implementation of Bluetooth to allow longer range low power mesh communication (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3478<PRESIDIO_ANONYMIZED_URL> this poses an unprecedentedly massive security risk because Bluetooth has routinely proven to be vulnerable to many exploits (<a href="https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html">https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html</a>) and not to mention that many Bluetooth enabled products never receive software updates to solve these well documented vulnerabilities. This could allow an attacker to create a Bluetooth worm, that could compromise most devices in a city by crawling from Bluetooth enabled device to Bluetooth enabled device eventually infiltrating into corporate networks through: smart watches, wearables, Bluetooth speakers or any other Bluetooth enabled device. This could allow an attacker permanent access to internal networks as we do not have the ability to re-flash, reformat or control the vast majority of these Bluetooth devices.</p>
 
     <p>Additionally Faraday cages in combination with strict checking of Bluetooth enabled devices entering sensitive areas is rendered ineffective due to human error and does not protect from off band non-Bluetooth attack vectors</p>
@@ -35,7 +36,6 @@
     <h3>Mitigation</h3>
     <p>Mitigation of this threat requires a holistic approach such as Bluetooth and preferably WiFi jamming inside of Faraday cage rooms, along with strict access control on USB and other connection methods to prevent infected devices in secured zones from being connected to secured computers and other devices. This should handle the information technology side of this threat with reasonable effectiveness. However, this still allows for attack vectors such as smartphones that are no longer being provided software updates by the manufacturer to gain access to sensitive data through cameras, microphones and other information acquired through all of their sensors (<a href="https://sigmobile.org/mobicom/2015/papers/p90-aliA.pdf">https://sigmobile.org/mobicom/2015/papers/p90-aliA.pdf</a>).</p>
 
-    <h3>Detection</h3>
     <p>Wireless detection is in this current environment completely infeasible as we do not have access or control over most Bluetooth devices and malicious communication between devices can be trivially hidden from view. A moderately competent attacker would also be able to prevent devices from showing obvious signs of infection such as a device exhibiting strange or unexpected behavior. The only feasible measure for detection would be a very long range Bluetooth snooping device monitoring Bluetooth traffic and doing some very advanced pattern recognition to detect possibly compromised devices; but this strategy does not mix well with most mitigation strategies and is currently prohibitively expensive.</p>
 
     <h3>Prevention</h3>
