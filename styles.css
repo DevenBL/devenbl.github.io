@@ -24,14 +24,43 @@ nav ul li {
     margin-right: 1em;
 }
 
+/*Styles for links at the top*/
 nav ul li a {
-    color: #e0e0e0;
+    color: #e0e0e0; /*Orange color for top navigation links*/
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li a:link { /*Unvisited link*/
+    color: #e0e0e0;
+}
+
+nav ul li a:visited { /*Visited link*/
+    color: #e0e0e0;
+}
+
+nav ul li a:hover { /*Mouse over link*/
     text-decoration: underline;
 }
+
+/*Styles for links in the body*/
+a {
+    color: #E69A51; /*Orange color*/
+    text-decoration: none;
+}
+
+a:link { /*Unvisited link*/
+    color: #E69A51;
+}
+
+a:visited { /*Visited link*/
+    color: #8A2BE2;
+}
+
+a:hover { /*Mouse over link*/
+    color: #01C0C8;
+    text-decoration: underline;
+}
+
 
 main {
     padding: 1em;
