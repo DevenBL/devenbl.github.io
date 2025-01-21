@@ -20,16 +20,43 @@
     <main>
         <section id="home">
             <h2>Welcome to My Simple Blog</h2>
-            <p style="font-size:1px">Welcome text goes here... Are you welcome if you cant read it?</p>
+            <p style="font-size:1px">Welcome text goes here... Are you welcome if you can't read it?</p>
         </section>
         
+        <article>
+            <h2>Is it innovation or are you just making your life worse?</h2>
+            <time datetime="2025-01-21"></time>
+            <p>The entire tech industry suffers from this one cognitive bias: pro-innovation bias (<a href="https://en.wikipedia.org/wiki/Pro-innovation_bias">https://en.wikipedia.org/wiki/Pro-innovation_bias</a>). Just because it’s new or innovative does not mean it’s any good; in fact, it’s probably awful. There are already 109 ways to skin a cat—do we really need 120 (<a href="https://xkcd.com/927/">https://xkcd.com/927/</a>)? In fact, why are you even skinning a cat in the first place? That's kind of a terrible thing to do for everyone involved.</p>
+            <p>Is there a technologically simpler solution to this that already exists? Why are you using 12 web frameworks and six different cdn’s, three hosting providers, and ddos protection on your website? Would it be possible to make it entirely in just HTML and CSS and do some basic DNS load balancing? For the vast majority of personal or corporate websites on the internet...</p>
+            <p>Yeah, there is.</p>
+            <p>So why are they using all these fancy new innovative technologies? The answer is simple enough: somebody sold it to them and they forgot about it. Just like a Netflix or Amazon subscription. And they keep paying it either with real money or with tech debt. Often both because you know. Running a massively inefficient website with too many dependencies costs more money to host, loads slower, runs worse, and has more security problems among many other issues.</p>
+            <p>So stop using that fancy new piece of technology. Improve the basics, learn about your options, and simplify. Because that new SIEM dashboard is not going to improve your security if you haven't covered the basics. Before you go and buy active protection services, you should harden all your systems as much as you can and then consider if punching a hole in that for log collection is even a good idea at this point. Because in a lot of cases...</p>
+            <p>It’s not.</p>
+            <p>If you find yourself in that situation, you will quickly realize. "Hey, I should just re-architect everything again to fix these critical security flaws I couldn't see before." Because in the process of hardening your systems, you learn about their most intimate details. And then you realize… "Oh hey, my network card is running a completely separate invisible operating system I have no control over that hasn’t been patched since 1989. Cool... The more you learn the worse it gets."</p>
+            <p>You learn more, find more gaping security flaws, bugs, and it’s just junk. So many problems to fix. WHY CAN I MAKE ALL MY CPU’S EXPLODE? It becomes inconceivable to add more complexity to this gigantic mess. At this point, suddenly you know exactly where the true innovation is required. It’s not adding new features. It’s fixing. Fixing the gigantic mess that already exists and maybe just maybe along the way adding a new feature here and there. No more innovation.</p>
         </article>
+        
+        <article>
+            <h2>Surrogation.</h2>
+            <time datetime="2025-01-21"></time>
+        
+            <p><a href="https://en.wikipedia.org/wiki/Surrogation">Surrogation </a>. Metrics are not the goal why are you measuring them?</p>
+
+<p>This is the most common problem I see in management in North America. It is everywhere. For example many Fortune 500 companies measure worker productivity by using mouse movement. This is not a measure of productivity it is a measure of how quickly your workers will get carpal tunnel. That much should be obvious to anyone who knows enough about statistics and thinks about the problem for more then a few minutes. So why are they using this useless metric for productivity instead of actually measuring the outcome? Because measuring the outcome is hard and measuring mouse movement is easy. And it’s not just easy it’s easy to maximize. Make that metric a target and boom 500% increase in productivity every week (<a href="https://en.wikipedia.org/wiki/Goodhart's_law">https://en.wikipedia.org/wiki/Goodhart's_law </a>).</p> 
+
+<p>Except what’s really happening? What happened is a lot of your employees bought mouse wigglers. Congratulations you just rewarded your most dishonest employees and you fired the honest ones. But it gets worse. Out of the honest ones that are left you kept the ones that are at a higher risk of carpal tunnel because they move the mouse more. That’s horrible obviously we should do the exact opposite and keep the ones with low mouse movement. Congratulations you kept your laziest employees and likely fired your highest performers. Jeez that’s horrible. It seems that minimizing or maximizing this metric just makes things worse. This is also the case whatever else you do with the metric. Maybe you should just leave it alone and stop measuring it. It’s not useful.</p> 
+
+<p>Metrics are abstractions of your performance they are not your performance. Oh you can’t objectively measure performance? Too bad. Give it up. Or if you really need to measure it? Measure it subjectively. Talk to your employees ask them what they were doing, how they did it, why they did it. Understand what they do individually to contribute to the goal. Because you can’t reduce people to metrics. Not accurately at least. And never forget. The metric is not the goal.</p>
+        
+        </article>
+        
+        </article>
+            <article>
             <h2>The Bluetooth Worm</h2>
             <time datetime="2025-01-20"></time>
-            <article>
             
     <h3>The Risk of Bluetooth enabled devices.</h3>
-    <p>An assortment of new devices are equipped with Bluetooth and more specifically Bluetooth low energy, a new implementation of Bluetooth to allow longer range low power mesh communication (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3478<PRESIDIO_ANONYMIZED_URL> this poses an unprecedentedly massive security risk because Bluetooth has routinely proven to be vulnerable to many exploits (<a href="https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html">https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html</a>) and not to mention that many Bluetooth enabled products never receive software updates to solve these well documented vulnerabilities. This could allow an attacker to create a Bluetooth worm, that could compromise most devices in a city by crawling from Bluetooth enabled device to Bluetooth enabled device eventually infiltrating into corporate networks through: smart watches, wearables, Bluetooth speakers or any other Bluetooth enabled device. This could allow an attacker permanent access to internal networks as we do not have the ability to re-flash, reformat or control the vast majority of these Bluetooth devices.</p>
+    <p>An assortment of new devices are equipped with Bluetooth and more specifically Bluetooth low energy, a new implementation of Bluetooth to allow longer range low power mesh communication (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3478807/#__sec16title">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3478807/#__sec16title </a>) this poses an unprecedentedly massive security risk because Bluetooth has routinely proven to be vulnerable to many exploits (<a href="https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html">https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html </a>) and not to mention that many Bluetooth enabled products never receive software updates to solve these well documented vulnerabilities. This could allow an attacker to create a Bluetooth worm, that could compromise most devices in a city by crawling from Bluetooth enabled device to Bluetooth enabled device eventually infiltrating into corporate networks through: smart watches, wearables, Bluetooth speakers or any other Bluetooth enabled device. This could allow an attacker permanent access to internal networks as we do not have the ability to re-flash, reformat or control the vast majority of these Bluetooth devices.</p>
 
     <p>Additionally Faraday cages in combination with strict checking of Bluetooth enabled devices entering sensitive areas is rendered ineffective due to human error and does not protect from off band non-Bluetooth attack vectors</p>
 
@@ -44,6 +71,13 @@
     <h3>Likelihood</h3>
     <p>Thankfully there have been no practical examples yet that we are aware of this large scale exploiting of Bluetooth that we are aware of. However, all the components of this attack have been individually developed and they have simply not been put together yet. Additionally, due to the difficulty of detecting this attack, it could have already happened and we have simply not noticed yet.</p>
         </article>
+        <!--
+        <article>
+            <h2>Another Post Title</h2>
+            <time datetime="2024-01-20"></time>
+            <p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra.</p>
+        </article>
+        
         <!-- <article>
             <h2>Another Post Title</h2>
             <time datetime="2023-04-09">April 9th, 2023</time>
