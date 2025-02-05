@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <style>
+        body, html {
+            animation: pulse 60000s infinite;
+        }
+        header, footer {
+            animation: pulseheader 60000s infinite;
+        }
+
+        @keyframes pulseheader {
+            0%, 100% {
+                background-color: #343434;
+            }
+            50% {
+                background-color: #FF0C60;
+            }
+        }    
+        @keyframes pulse {
+            0%, 100% {
+                background-color: #121212;
+            }
+            50% {
+                background-color: #FF0C60;
+            }
+        }
+    </style>
     <header>
         <h1>My Simple Blog</h1>
         <nav>
@@ -20,7 +45,7 @@
     <main>
         <section id="home">
             <h2>My Simple Blog about IT and Cybersecurity</h2>
-            <p style="font-size:1px">Welcome text goes here... Are you welcome if you can't read it?</p>
+            <p style="font-size:0.01px">Welcome text goes here... Are you welcome if you can't read it? And yes this website does gaslight you by slowly changing the color over the course of multiple hours. No javascript required.</p>
         </section>
         
         <article>
@@ -89,7 +114,7 @@
             <h2>About Me</h2>
             <!-- <p>This is where you can write about yourself and provide some background information.</p> -->
             <article>
-            <p>You know that kid in irc chatrooms that stayed quiet and listened? Yeah that's me. I have witnessed it all. I have seen. I have lived IT history. I have thrown away more identities than i can hope to remember. But now's enough I gotta tie this to my real identity to see if we can get something done. Because there are too many problems that still need solving and i don't see anyone solving them.</p>
+            <p>You know that kid in irc chatrooms that stayed quiet and listened all those years ago? Yeah that's me. I have witnessed it all. I have seen. I have lived IT history. I have thrown away more identities than i can hope to remember. But now's enough I gotta tie this to my real identity to see if we can get something done. Because there are too many problems that still need solving and i don't see anyone solving them.</p>
             <p>Despite my skillset i have had great difficulty getting hired. So if you have work please do <a href="#contact">contact me</a> about it.</p>
             </article>
         </section>
