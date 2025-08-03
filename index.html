@@ -130,11 +130,28 @@ Open source. Open source EVERYTHING and I am not the only one to think like that
     <h1>Likelihood</h1>
     <p>Thankfully there have been no practical examples yet that we are aware of this large scale exploiting of Bluetooth that we are aware of. However, all the components of this attack have been individually developed and they have simply not been put together yet. Additionally, due to the difficulty of detecting this attack, it could have already happened and we have simply not noticed yet.</p>
         </article>
-        <!--
+
         <article>
-            <h1>Another Post Title</h1>
-            <time datetime="2024-01-20"></time>
-            <p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra.</p>
+            <h1>Network Card security. </h1>
+            <time datetime="2025-06-25"></time>
+            <p>
+            I recently did a <a href="https://www.task.to/schedule/v3f7p4b6zhdyhz42w5flrfk9042n1b-awj77-rdbak-fdc5x-26fwb-7b2l5-bt7nz-d86l5-k57sz-93dff-9s2js-jcnbg-akbnl-93swm-yx55m-hs3sh-kga2g-wx863-zafr8-e9kza-j84jn-xakg7">Talk</a> at Task the Toronto Area Security Klatch about the security implications of a compromised network card. </p>
+            <p>If you've never thought about it or really looked into it you might think: "Oh it can't be that bad. Im sure it's no big deal.".</p>
+            <p> It is in fact a huge deal. </p>
+            <p>This tiny computer in your computer is in fact one of the worst possible computer components that could get compromised. This is primarily because of PCI Express. PCI Express is a high speed flexible inherently trusted system scale network designed entirely with performance in mind with little regard for security. Your network card is architecturally the sole thing that sits between that and the internet. </p>
+            <p>Defense in depth is not an option. This is a single critical point of failure. </p>
+            <p><a href="https://youtu.be/UNlz_p1PvIg">That no one thinks about.</a></p>
+            <iframe src="https://www.youtube.com/embed/UNlz_p1PvIg" frameborder="0" referrerpolicy="no-referrer"></iframe>
+            <p>Now if the alarms are not already blaring inside your head. For those not already aware being connected to PCI express as a network card inherently means you have the ability to do <a href="https://en.wikipedia.org/wiki/Direct_memory_access">DMA access</a> as it is part of how they operate. That means your network card can arbitrarily read and write to your system's memory with little to no restriction. </p>
+            <p>But wait it gets worse! PCI express supports point to point communication. Meaning that your compromised network card can communicate directly to and compromise your other network card over PCIe. Depending on the system architecture they can even do this without any involvement from the CPU or PCIe root complex. Meaning that they can entirely bypass the operating system in many cases. </p>
+            <p>This means that even monitoring the PCIe bus with hyper advanced detection methods can be entirely evaded. With these two features combined you could remotely over the internet in an entirely undetectable manner bypassing every firewall, infiltrate every machine on the network and dump all the sensitive information in ram and send in back over the internet. </p>
+            <p>Now you should be thinking: "Oh this is pretty bad this is a huge problem." </p>
+            <p>But it gets worse. Because if the PCIe devices stay powered on like is the case with wake on Lan functionality enabled you can actually do this attack while all the systems are powered off. </p>
+            <p>Meaning a state actor that can pull this off for all available network cards would be able to fully comprimise every device and computer vaguely connected to the internet at once with absolutely zero indicators of comprimise and obtain full control over every one of them. </p>
+            <p>Detection after the fact is not even viable since network card firmware verification is not even a reliable indicator of comprimise beacause of in network card memory exploits evading it. </p>
+            <p>Despite all the fiddly little details inherent to computer hardware like <a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit">ASIC's</a> and various architectural differences that can make comprimising these devices more difficult due to factors like resource constrained enviroments. </p>
+            <p>The conclusion remains the same. You are boned! And there is very little you can do about it.
+            </p>
         </article>
 
         <!-- <article>
@@ -148,13 +165,15 @@ Open source. Open source EVERYTHING and I am not the only one to think like that
             <h1>About Me</h1>
             <!-- <p>This is where you can write about yourself and provide some background information.</p> -->
             <article>
-            <p>You know that kid in irc chatrooms that stayed quiet and listened all those years ago? Yeah that's me. I have witnessed it all. I have seen. I have lived IT history. I have thrown away more identities than i can hope to remember. But now's enough I gotta tie this to my real identity to see if we can get something done. Because there are too many problems that still need solving and i don't see anyone solving them.</p>
-            <p>Despite my skillset i have had great difficulty getting hired. So if you have work please do <a href="#contact">contact me</a> about it.</p>
+            <p>You know that kid in irc chatrooms that stayed quiet and listened all those years ago? Yeah that's me. I have witnessed it all. I have seen. I have lived a large portion of IT history. I have thrown away more identities than i can hope to remember. But now's enough I gotta tie this to my real identity to see if we can get something done. Because there are too many problems that still need solving and i don't see anyone solving them.</p>
+            <p>Despite my skillset i have had great difficulty getting hired. So if you have work or would like me to work with you please do <a href="#contact">contact me</a> about it.</p>
             </article>
         </section>
         <section id="contact">
             <h1>Contact Me</h1>
+            <article>
             <p> Contact me by opening up the <a href="https://github.com/DevenBL/devenbl.github.io/issues/1">Issues</a> section of the github page associated with this website. I will figure out something better later. </p>
+            </article>
             <p></p>
         </section>
     </main>
